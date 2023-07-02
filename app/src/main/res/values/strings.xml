@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Supporting Your Diabetes</string>
+
+    <string name="getStartText">WELCOME TO\nSupporting Your Diabetes</string>
+    <string name="get_start">Get Start</string>
+
+    <string name="hello">Hello\t There,\nWelcome \tBack</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgetPassword">Forget Password ?</string>
+    <string name="new_user_signup">New Sign Up !</string>
+
+    <string name="forgetpassword">Enter Your Email Address Associated With Your Account</string>
+
+    <string name="startText2">Supporting Your Diabetes</string>
+
+</resources>
