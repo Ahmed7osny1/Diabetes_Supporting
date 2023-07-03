@@ -17,6 +17,9 @@
             app:destination="@id/mainActivity"
             app:popUpTo="@id/mainActivity"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_foodFragment"
+            app:destination="@id/foodFragment" />
     </fragment>
     <fragment
         android:id="@+id/personFragment"
@@ -29,4 +32,9 @@
         android:name="com.example.supportingyourdiabetes.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.supportingyourdiabetes.ui.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" />
 </navigation>
