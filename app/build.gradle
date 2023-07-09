@@ -70,4 +70,6 @@ dependencies {
     // swipe refresh layout
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01'
 
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
 }

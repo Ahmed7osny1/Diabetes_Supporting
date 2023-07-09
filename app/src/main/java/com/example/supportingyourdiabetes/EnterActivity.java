@@ -11,6 +11,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Objects;
+
 public class EnterActivity extends AppCompatActivity {
 
     SharedPreferences prefs;
@@ -20,6 +22,8 @@ public class EnterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter);
+
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         // Create Shared Preferences
         prefs = this.getSharedPreferences("authUser", MODE_PRIVATE);

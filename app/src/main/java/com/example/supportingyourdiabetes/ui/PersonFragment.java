@@ -43,5 +43,14 @@ public class PersonFragment extends Fragment {
         binding.yourPassword.setText(prefs.getString("password",""));
         binding.yourPhone.setText(prefs.getString("phone",""));
 
+        binding.AlarmBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(
+                        R.id.action_personFragment_to_alarmFragment
+                );
+            }
+        });
+
     }
 }

@@ -17,4 +17,47 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="camera">The Android framework includes support for various cameras and camera features
+        available on devices, allowing you to capture pictures and videos in your applications.
+        This document discusses a quick, simple approach to image and video capture and outlines an advanced
+        approach for creating custom camera experiences for your users.</string>
+
+    <string name="alarm">Measure blood sugar</string>
+    <string name="alarm_delete">Remove reminder</string>
+    <string name="alarm_deleted">Removed reminder</string>
+    <string name="alarm_desc">%s since the last measurement</string>
+    <string name="alarm_desc_first">Thought about yet?</string>
+    <string name="alarm_reminder">Reminder</string>
+    <string name="alarm_reminder_none">No reminder</string>
+    <string name="alarm_reminder_in">Reminder in</string>
+
+
+    <string-array name="occurence">
+        <item>Once</item>
+        <item>Weekly</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_entries">
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>300</item>
+    </string-array>
+    <string name="menu_item_new">New</string>
+    <string name="menu_item_save">Save</string>
+    <string name="menu_item_delete">Cancel</string>
+
+
+
 </resources>

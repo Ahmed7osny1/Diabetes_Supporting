@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -18,6 +23,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SupportingYourDiabetes"
         tools:targetApi="31">
+
+        <activity
+            android:name=".ui.alarm.AlarmNotification"
+            android:process=":remote"
+            android:label="Alarm notification" />
+        <activity
+            android:name=".ui.alarm.Preferences"
+            android:label="Preferences" />
+
+        <receiver
+            android:name=".ui.alarm.AlarmReceiver"
+            android:process=":remote" />
+        <receiver android:name=".ui.alarm.BootCompletedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.alarm.Editt"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.alarm.AlarmFragment"
+            android:exported="false"/>
         <activity
             android:name=".EnterActivity"
             android:exported="false"/>

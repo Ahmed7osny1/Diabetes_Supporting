@@ -44,6 +44,33 @@ public class WelcomeFragment extends Fragment {
                 );
             }
         });
+
+        binding.ownMedicine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(
+                        R.id.action_welcomeFragment_to_medicineFragment
+                );
+            }
+        });
+
+        binding.ownAdvice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(
+                        R.id.action_welcomeFragment_to_adviceFragment
+                );
+            }
+        });
+
+        binding.checkDiagnose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(
+                        R.id.action_welcomeFragment_to_checkFragment
+                );
+            }
+        });
     }
 
     private void imageSliderSetup() {

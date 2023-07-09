@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="200dp"
         android:background="@drawable/glucose"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -202,6 +202,24 @@
                     app:layout_constraintHorizontal_bias="0.065"
                     app:layout_constraintStart_toEndOf="@+id/imageView4"
                     app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/AlarmBtn"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btnstyle"
+                    android:text="Alarm"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/yourPassword"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
 
 
 

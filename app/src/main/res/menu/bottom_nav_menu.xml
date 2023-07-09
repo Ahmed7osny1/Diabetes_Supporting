@@ -7,6 +7,16 @@
         android:icon="@drawable/ic_home"/>
 
     <item
+        android:id="@+id/activityFragment"
+        android:title="Activity"
+        android:icon="@drawable/ic_run"/>
+
+    <item
+        android:id="@+id/graphFragment"
+        android:title="Graph"
+        android:icon="@drawable/ic_graph"/>
+
+    <item
         android:id="@+id/personFragment"
         android:title="Profile"
         android:icon="@drawable/ic_person"/>

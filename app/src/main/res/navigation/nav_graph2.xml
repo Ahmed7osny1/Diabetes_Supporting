@@ -20,13 +20,31 @@
         <action
             android:id="@+id/action_welcomeFragment_to_foodFragment"
             app:destination="@id/foodFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_activityFragment"
+            app:destination="@id/activityFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_adviceFragment"
+            app:destination="@id/adviceFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_checkFragment"
+            app:destination="@id/checkFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_graphFragment"
+            app:destination="@id/graphFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_medicineFragment"
+            app:destination="@id/medicineFragment" />
     </fragment>
     <fragment
         android:id="@+id/personFragment"
         android:name="com.example.supportingyourdiabetes.ui.PersonFragment"
         android:label="fragment_person"
         tools:layout="@layout/fragment_person" >
-       </fragment>
+        <action
+            android:id="@+id/action_personFragment_to_alarmFragment"
+            app:destination="@id/alarmFragment" />
+    </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.example.supportingyourdiabetes.MainActivity"
@@ -37,4 +55,34 @@
         android:name="com.example.supportingyourdiabetes.ui.FoodFragment"
         android:label="fragment_food"
         tools:layout="@layout/fragment_food" />
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.example.supportingyourdiabetes.ui.ActivityFragment"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/adviceFragment"
+        android:name="com.example.supportingyourdiabetes.ui.AdviceFragment"
+        android:label="fragment_advice"
+        tools:layout="@layout/fragment_advice" />
+    <fragment
+        android:id="@+id/checkFragment"
+        android:name="com.example.supportingyourdiabetes.ui.checkFragment"
+        android:label="fragment_check"
+        tools:layout="@layout/fragment_check" />
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.example.supportingyourdiabetes.ui.GraphFragment"
+        android:label="fragment_graph"
+        tools:layout="@layout/fragment_graph" />
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.example.supportingyourdiabetes.ui.MedicineFragment"
+        android:label="fragment_medicine"
+        tools:layout="@layout/fragment_medicine" />
+    <activity
+        android:id="@+id/alarmFragment"
+        android:name="com.example.supportingyourdiabetes.ui.alarm.AlarmFragment"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" />
 </navigation>
